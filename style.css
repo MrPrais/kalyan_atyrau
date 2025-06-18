@@ -1,0 +1,68 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background: black;
+}
+
+canvas#smoke-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 50px 20px;
+  color: white;
+}
+
+h1 {
+  font-size: 3em;
+  color: #ffcc99;
+  text-shadow: 0 0 10px #ffcc99, 0 0 20px #cc9966;
+}
+
+.subtitle {
+  font-size: 1.3em;
+  margin-top: 10px;
+}
+
+.price-list p {
+  margin: 12px 0;
+  font-size: 1.1em;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 1.1em;
+}
+
+.whatsapp {
+  background: #25D366;
+  color: #000;
+}
+
+.instagram {
+  background: #E1306C;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
