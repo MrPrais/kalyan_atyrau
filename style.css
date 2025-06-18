@@ -1,91 +1,31 @@
 
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    background: #111;
-    color: white;
-    background-image: url('https://i.ibb.co/WFZ2mvx/smoke-bg.gif');
-    background-size: cover;
-    background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: white;
+  background: black;
 }
 
-header {
-    background-color: rgba(0,0,0,0.8);
-    padding: 15px;
-    text-align: center;
+.smoke {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.3;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+header, section, footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 10px auto;
+  width: 90%;
+  border-radius: 10px;
 }
 
-nav a {
-    color: #f7931e;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    padding: 20px;
-    background-color: rgba(0,0,0,0.6);
-    margin: 20px;
-    border-radius: 10px;
-}
-
-.icon {
-    width: 40px;
-    margin: 10px;
-}
-
-textarea {
-    width: 100%;
-    height: 80px;
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    resize: none;
-}
-
-.map-btn, .delivery-btn {
-    display: inline-block;
-    margin: 10px 0;
-    padding: 10px 15px;
-    background-color: #f7931e;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.map-btn:hover, .delivery-btn:hover {
-    background-color: #f57c00;
-}
-
-.tabs {
-    overflow: hidden;
-    border-bottom: 1px solid #f7931e;
-}
-
-.tablinks {
-    background-color: inherit;
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-weight: bold;
-    color: #f7931e;
-}
-
-.tablinks.active {
-    border-bottom: 2px solid #f7931e;
-}
-
-.tabcontent {
-    display: none;
-    padding: 15px 0;
+ul {
+  list-style: none;
+  padding: 0;
 }
