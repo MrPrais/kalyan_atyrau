@@ -1,11 +1,9 @@
-<Dblm_atyrau>
+<Dblm_Atyrau>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Кальян Атырау 24/7 | Доставка кальянов</title>
-<!-- Фото кальяна -->
-<img src="https://i.imgur.com/V1u3fTQ.jpg" alt="Кальян в аренду" style="width:100%; border-radius: 12px; margin-top: 20px;">
   <style>
     body {
       margin: 0;
@@ -15,53 +13,40 @@
       animation: gradient 15s ease infinite;
       color: #fff;
     }
-
     @keyframes gradient {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
-
     header {
       background: rgba(0, 0, 0, 0.7);
       text-align: center;
       padding: 50px 20px;
     }
-
     header h1 {
       color: #00ffc8;
       font-size: 36px;
       margin-bottom: 10px;
     }
-
     header p {
       color: #ccc;
       font-size: 18px;
     }
-
     section {
       max-width: 800px;
       margin: auto;
       padding: 30px 20px;
     }
-
     .block {
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(255,255,255,0.05);
       padding: 25px;
       border-radius: 12px;
       margin-bottom: 25px;
       border: 1px solid #444;
       backdrop-filter: blur(5px);
     }
-
-    h2 {
-      color: #00ffc8;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
+    h2 { color: #00ffc8; }
+    ul { padding-left: 20px; }
     a.btn {
       display: inline-block;
       margin-top: 15px;
@@ -73,23 +58,14 @@
       font-weight: bold;
       transition: background 0.3s ease;
     }
-
-    a.btn:hover {
-      background: #00cfa5;
-    }
-
+    a.btn:hover { background: #00cfa5; }
     footer {
       text-align: center;
       padding: 20px;
       color: #777;
       font-size: 14px;
     }
-
-    .social a {
-      color: #00ffc8;
-      text-decoration: none;
-      margin-right: 15px;
-    }
+    .social a { color: #00ffc8; text-decoration: none; margin-right: 15px; }
   </style>
 </head>
 <body>
@@ -98,6 +74,9 @@
     <h1>Кальян Атырау 24/7</h1>
     <p>Аренда кальянов с бесплатной доставкой — день и ночь</p>
   </header>
+
+  <!-- Фото кальяна -->
+  <img src="https://cdn.pixabay.com/photo/2015/11/01/14/44/hookah-821732_1280.jpg" alt="Кальян в аренду" style="width:100%; border-radius: 12px; margin: 20px 0;">
 
   <section>
     <div class="block">
@@ -135,8 +114,6 @@
     </div>
   </section>
 
-  <footer>
-    © 2025 Kalyan Atyrau — Сделано для кайфа
-  </footer>
+  <footer>© 2025 Kalyan Atyrau — Сделано для кайфа</footer>
 </body>
 </html>
