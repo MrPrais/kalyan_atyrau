@@ -6,22 +6,13 @@
   <title>Kalyan Atyrau</title>
   <link rel="stylesheet" href="style.css" />
   <script src="lang.js" defer></script>
-  <script>
-    function toggleTab(tabId) {
-      document.querySelectorAll('.tab-content').forEach(section => {
-        section.classList.remove('active');
-      });
-      document.getElementById(tabId).classList.add('active');
-    }
-    window.onload = () => toggleTab('menu');
-  </script>
 </head>
 <body>
   <div class="smoke-bg"></div>
 
   <header>
-    <h1 class="logo neon">Kalyan Atyrau</h1>
-    <nav class="right-corner">
+    <h1 class="logo neon-text">Kalyan Atyrau</h1>
+    <nav class="lang-select">
       <select id="language-select" onchange="changeLanguage()">
         <option value="ru">Русский</option>
         <option value="kz">Қазақша</option>
@@ -29,16 +20,7 @@
     </nav>
   </header>
 
-  <div class="main-menu">
-    <ul>
-      <li><a href="#" onclick="toggleTab('menu')">🍽 Меню</a></li>
-      <li><a href="#" onclick="toggleTab('delivery')">🚚 Доставка</a></li>
-      <li><a href="#" onclick="toggleTab('about')">ℹ️ О нас</a></li>
-    </ul>
-    <p class="juice-info">🥤 Скоро будут соки и лимонады!</p>
-  </div>
-
-  <main>
+  <main class="centered-tabs">
     <section id="menu" class="tab-content active">
       <h2 data-lang="menu_title">Выберите вкус табака</h2>
       <ul>
@@ -49,23 +31,22 @@
         <li>🍊 Апельсиновый Пирог</li>
         <li>🥥❄ Ледяной Кокос</li>
       </ul>
+      <p class="highlight">Скоро будут лимонады и соки!</p>
     </section>
 
     <section id="delivery" class="tab-content">
-      <h2 data-lang="delivery_title">🚚 Доставка</h2>
-      <p data-lang="delivery_text1">По Атырау 24/7. Бесплатно.</p>
-      <p data-lang="delivery_24h">На 24 часа: 10.000₸ — 2 табака + 6 углей</p>
-      <p data-lang="delivery_48h">На 48 часов: 14.990₸ — 3 табака + 9 углей</p>
-      <p data-lang="delivery_extra">Дополнительно: уголь — 400₸, табак — 1500₸</p>
-      <p><a href="https://2gis.kz/atyrau" target="_blank" data-lang="delivery_map">📍 Указать адрес через 2ГИС</a></p>
-      <p data-lang="delivery_soon"><strong>Скоро будут напитки и соки!</strong></p>
+      <h2>🚚 Доставка</h2>
+      <p class="fancy-text">По Атырау 24/7 — Бесплатно.</p>
+      <p class="fancy-text">🔸 На 24 часа — <strong>10.000₸</strong> (2 табака и 6 углей)</p>
+      <p class="fancy-text">🔸 На 48 часов — <strong>14.990₸</strong> (3 табака и 9 углей)</p>
+      <p class="fancy-text">➕ Дополнительно: уголь — 400₸, табак — 1500₸</p>
+      <a href="https://2gis.kz/atyrau" target="_blank" class="map-link">📍 Указать адрес через 2ГИС</a>
+      <p><strong>Скоро будут напитки и соки!</strong></p>
     </section>
 
     <section id="about" class="tab-content">
-      <h2 data-lang="about_title">О нас</h2>
-      <p data-lang="about_text">
-        Мы — команда Kalyan Atyrau, работаем круглосуточно и доставляем лучший кальян по городу. У нас быстрый сервис, приятные цены и постоянные акции. Стремимся стать самыми лучшими в Атырау!
-      </p>
+      <h2>О нас</h2>
+      <p>Мы — команда <strong>Kalyan Atyrau</strong>. Работаем круглосуточно и доставляем лучший кальян по городу. Быстрый сервис, приятные цены, постоянные акции. Мы стремимся стать №1 в Атырау!</p>
     </section>
   </main>
 
