@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<Dblm_atyrau>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Кальян Атырау 24/7 | Доставка кальянов</title>
-  <img src="kalyan.jpg.PNG" alt="Кальян в аренду" style="width:100%; border-radius: 12px; margin-top: 20px;">
+<!-- Фото кальяна -->
+<img src="https://i.imgur.com/V1u3fTQ.jpg" alt="Кальян в аренду" style="width:100%; border-radius: 12px; margin-top: 20px;">
   <style>
     body {
       margin: 0;
