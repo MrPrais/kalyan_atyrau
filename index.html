@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -14,19 +13,17 @@
 
   <header>
     <h1 class="logo">Kalyan Atyrau</h1>
-    <nav>
-      <ul>
-        <li><a href="#" onclick="toggleTab('menu')">Меню</a></li>
-        <li><a href="#" onclick="toggleTab('delivery')">Доставка</a></li>
-        <li><a href="#" onclick="toggleTab('about')">О нас</a></li>
-        <li>
-          <select id="language-select" onchange="changeLanguage()">
-            <option value="ru">Русский</option>
-            <option value="kz">Қазақша</option>
-          </select>
-        </li>
-      </ul>
-    </nav>
+    <div class="center-nav">
+      <a href="#" onclick="toggleTab('menu')">Меню</a>
+      <a href="#" onclick="toggleTab('delivery')">Доставка</a>
+      <a href="#" onclick="toggleTab('about')">О нас</a>
+    </div>
+    <div class="lang-select">
+      <select id="language-select" onchange="changeLanguage()">
+        <option value="ru">Русский</option>
+        <option value="kz">Қазақша</option>
+      </select>
+    </div>
   </header>
 
   <main>
@@ -64,7 +61,7 @@
   </footer>
 
   <div class="social-buttons">
-    <a href="https://www.instagram.com/sit04ka?igsh=bWQxZjg2bjQ1cTZn" target="_blank">📷 Instagram</a>
+    <a href="https://www.instagram.com/dblm_atyrau?igsh=MTJrY3o4amllcHpn" target="_blank">📷 Instagram</a>
     <a href="https://wa.me/77788146774" target="_blank">💬 WhatsApp</a>
   </div>
 </body>
