@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -7,6 +6,7 @@
   <title>Kalyan Atyrau 24/7</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
+  <script defer src="lang.js"></script>
 </head>
 <body>
   <div class="smoke-bg"></div>
@@ -27,58 +27,34 @@
             <li>🥥❄ Ледяной Кокос</li>
           </ul>
         </li>
-         <div class="lang-switch">
-    <select onchange="changeLang(this.value)">
-      <option value="ru">🇷🇺 Рус</option>
-      <option value="kk">🇰🇿 Каз</option>
-      <option value="en">🇬🇧 Eng</option>
-    </select>
-  </div>
-   <script>
-    function changeLang(lang) {
-      if (lang === "ru") {
-        document.getElementById("title").innerText = "Кальян доставка по Атырау 24/7";
-        document.getElementById("price").innerText = "10 000 ₸ / 24 часа | 2 табака на выбор + 6 углей | Бесплатная доставка";
-        document.getElementById("promo").innerText = "🔥 Акция: 48 часов — 14 990 ₸ — 3 табака + 9 углей!";
-      }
-      if (lang === "kk") {
-        document.getElementById("title").innerText = "Атырау қаласына кальян жеткізу 24/7";
-        document.getElementById("price").innerText = "10 000 ₸ / 24 сағат | 2 темекі + 6 көмір | Тегін жеткізу";
-        document.getElementById("promo").innerText = "🔥 Акция: 48 сағатқа — 14 990 ₸ — 3 темекі мен 9 көмір!";
-      }
-      if (lang === "en") {
-        document.getElementById("title").innerText = "Hookah Delivery in Atyrau 24/7";
-        document.getElementById("price").innerText = "10,000 ₸ / 24 hours | 2 tobaccos + 6 coals | Free delivery";
-        document.getElementById("promo").innerText = "🔥 Promo: 48 hours — 14,990 ₸ — 3 tobaccos + 9 coals!";
-      }
-    }
-  </script>
-</body>
-</html>
+        <li><a href="#contact">Контакты</a></li>
+        <li><a href="#lang">🌐</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <main>
-    <section id="about">
-      <h1>Кальяны с доставкой по Атырау 24/7</h1>
-      <p>🚚 Бесплатная доставка</p>
-      <p>💨 10.000₸ за 24 часа (2 табака, 6 углей)</p>
-      <p>🔥 Акция: 48 часов — 14.990₸ (3 табака, 9 углей)</p>
-      <p>Дополнительно: уголь — 400₸, табак — 1500₸</p>
-      <p class="soon">Скоро в продаже: лимонады и свежие соки!</p>
-    </section>
+ <main>
+  <section id="about">
+    <h1 data-ru="Кальяны с доставкой по Атырау 24/7" data-kz="Атырауда 24/7 кальян жеткізу">Кальяны с доставкой по Атырау 24/7</h1>
+    <p data-ru="🚚 Бесплатная доставка" data-kz="🚚 Тегін жеткізу">🚚 Бесплатная доставка</p>
+    <p data-ru="💨 10.000₸ за 24 часа (2 табака, 6 углей)" data-kz="💨 10.000₸ 24 сағатқа (2 темекі, 6 көмір)">💨 10.000₸ за 24 часа (2 табака, 6 углей)</p>
+    <p data-ru="🔥 Акция: 48 часов — 14.990₸ (3 табака, 9 углей)" data-kz="🔥 Акция: 48 сағат — 14.990₸ (3 темекі, 9 көмір)">🔥 Акция: 48 часов — 14.990₸ (3 табака, 9 углей)</p>
+    <p data-ru="Дополнительно: уголь — 400₸, табак — 1500₸" data-kz="Қосымша: көмір — 400₸, темекі — 1500₸">Дополнительно: уголь — 400₸, табак — 1500₸</p>
+    <p class="soon" data-ru="Скоро в продаже: лимонады и свежие соки!" data-kz="Жақында: лимонад пен жаңа шырындар!">Скоро в продаже: лимонады и свежие соки!</p>
+  </section>
 
-    <section id="contact">
-      <h2>Связаться с нами</h2>
-      <div class="social-buttons">
-        <a href="https://wa.me/77788146774" target="_blank" class="whatsapp">WhatsApp</a>
-        <a href="https://www.instagram.com/dblm_atyrau" target="_blank" class="instagram">Instagram</a>
-      </div>
-    </section>
+  <section id="contact">
+    <h2 data-ru="Связаться с нами" data-kz="Байланыс">Связаться с нами</h2>
+    <div class="social-buttons">
+      <a href="https://wa.me/77788146774" target="_blank" class="whatsapp">WhatsApp</a>
+      <a href="https://www.instagram.com/dblm_atyrau" target="_blank" class="instagram">Instagram</a>
+    </div>
+  </section>
 
-    <section id="delivery">
-      <h2>Укажите локацию в 2ГИС</h2>
-      <p>Откройте карту 2ГИС, найдите точку и отправьте нам локацию в WhatsApp для быстрой доставки.</p>
-      <a href="https://2gis.kz/atyrau" class="map-button" target="_blank">Открыть 2ГИС</a>
-    </section>
-  </main>
-</body>
-</html>
+  <section id="delivery">
+    <h2 data-ru="Укажите локацию в 2ГИС" data-kz="2ГИС картасынан орынды таңдаңыз">Укажите локацию в 2ГИС</h2>
+    <p data-ru="Откройте карту 2ГИС, найдите точку и отправьте нам локацию в WhatsApp для быстрой доставки." 
+       data-kz="2ГИС картасын ашып, орынды тауып, WhatsApp арқылы жіберіңіз.">Откройте карту 2ГИС, найдите точку и отправьте нам локацию в WhatsApp для быстрой доставки.</p>
+    <a href="https://2gis.kz/atyrau" class="map-button" target="_blank" data-ru="Открыть 2ГИС" data-kz="2ГИС ашу">Открыть 2ГИС</a>
+  </section>
+</main>
