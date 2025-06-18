@@ -2,44 +2,72 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: 'Segoe UI', sans-serif;
   background: black;
+  color: white;
 }
 
-canvas#smoke-canvas {
+.background-smoke {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('smoke.gif') center center / cover no-repeat;
+  opacity: 0.4;
+  pointer-events: none;
 }
 
 .overlay {
   position: relative;
   z-index: 1;
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
   text-align: center;
-  padding: 50px 20px;
-  color: white;
 }
 
-h1 {
+header h1 {
   font-size: 3em;
   color: #ffcc99;
-  text-shadow: 0 0 10px #ffcc99, 0 0 20px #cc9966;
+  text-shadow: 0 0 15px #ffcc99, 0 0 25px #cc9966;
 }
 
-.subtitle {
-  font-size: 1.3em;
+header p {
   margin-top: 10px;
+  font-size: 1.2em;
+  color: #ccc;
 }
 
-.price-list p {
-  margin: 12px 0;
+.menu, .order {
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+}
+
+h2 {
+  color: #ff9966;
+  text-shadow: 0 0 10px #ff9966;
+  font-size: 1.7em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+ul li {
+  margin: 10px 0;
   font-size: 1.1em;
 }
 
 .buttons {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .btn {
@@ -65,4 +93,10 @@ h1 {
 
 .btn:hover {
   opacity: 0.85;
+}
+
+footer {
+  margin-top: 60px;
+  font-size: 0.9em;
+  color: #777;
 }
