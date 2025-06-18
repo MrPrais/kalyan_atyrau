@@ -21,50 +21,37 @@ body {
 header {
   background: rgba(0, 0, 0, 0.8);
   padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
 }
 
 .logo {
   margin: 0;
-  font-size: 1.8em;
+  text-align: center;
+  font-size: 2em;
 }
 
-.neon-border {
-  border: 2px solid #0ff;
-  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
-  padding: 15px;
-  border-radius: 10px;
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin-top: 10px;
 }
 
-.language-switch select {
-  background: transparent;
+nav a, select {
   color: white;
-  border: 1px solid #0ff;
-  padding: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  background: transparent;
+  border: none;
   font-size: 1em;
 }
 
-.main-nav {
-  display: flex;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.main-nav ul {
-  display: flex;
-  gap: 40px;
-  list-style: none;
-  padding: 15px 0;
-  margin: 0;
-}
-
-.main-nav a {
-  color: #0ff;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1.1em;
+.top-right-lang {
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
 
 main {
@@ -73,38 +60,16 @@ main {
 
 .tab-content {
   display: none;
-  margin-top: 20px;
 }
 
 .tab-content.active {
   display: block;
 }
 
-.delivery-list {
-  list-style: none;
-  padding: 0;
-}
-
-.delivery-list li {
-  margin: 10px 0;
-  font-size: 1.1em;
-}
-
-.map-link {
-  color: #0ff;
-  text-decoration: underline;
-}
-
-.note, .coming-soon {
-  color: #0ff;
-  font-style: italic;
-  margin-top: 10px;
-}
-
 footer {
   text-align: center;
   padding: 10px;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .social-buttons {
@@ -117,10 +82,29 @@ footer {
 }
 
 .social-buttons a {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   color: white;
   text-decoration: none;
   padding: 8px 12px;
   border-radius: 5px;
+}
+
+.neon-text {
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+.delivery-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border: 2px solid #0ff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0ff;
+}
+
+.announcement {
+  margin-top: 15px;
   font-weight: bold;
+  color: #f0f;
+  text-shadow: 0 0 5px #f0f;
 }
