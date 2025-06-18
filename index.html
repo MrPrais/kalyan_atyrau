@@ -27,11 +27,34 @@
             <li>🥥❄ Ледяной Кокос</li>
           </ul>
         </li>
-        <li><a href="#contact">Контакты</a></li>
-        <li><a href="#lang">🌐</a></li>
-      </ul>
-    </nav>
-  </header>
+         <div class="lang-switch">
+    <select onchange="changeLang(this.value)">
+      <option value="ru">🇷🇺 Рус</option>
+      <option value="kk">🇰🇿 Каз</option>
+      <option value="en">🇬🇧 Eng</option>
+    </select>
+  </div>
+   <script>
+    function changeLang(lang) {
+      if (lang === "ru") {
+        document.getElementById("title").innerText = "Кальян доставка по Атырау 24/7";
+        document.getElementById("price").innerText = "10 000 ₸ / 24 часа | 2 табака на выбор + 6 углей | Бесплатная доставка";
+        document.getElementById("promo").innerText = "🔥 Акция: 48 часов — 14 990 ₸ — 3 табака + 9 углей!";
+      }
+      if (lang === "kk") {
+        document.getElementById("title").innerText = "Атырау қаласына кальян жеткізу 24/7";
+        document.getElementById("price").innerText = "10 000 ₸ / 24 сағат | 2 темекі + 6 көмір | Тегін жеткізу";
+        document.getElementById("promo").innerText = "🔥 Акция: 48 сағатқа — 14 990 ₸ — 3 темекі мен 9 көмір!";
+      }
+      if (lang === "en") {
+        document.getElementById("title").innerText = "Hookah Delivery in Atyrau 24/7";
+        document.getElementById("price").innerText = "10,000 ₸ / 24 hours | 2 tobaccos + 6 coals | Free delivery";
+        document.getElementById("promo").innerText = "🔥 Promo: 48 hours — 14,990 ₸ — 3 tobaccos + 9 coals!";
+      }
+    }
+  </script>
+</body>
+</html>
 
   <main>
     <section id="about">
