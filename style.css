@@ -1,9 +1,9 @@
-
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   color: white;
   background: #000;
+  position: relative;
   overflow-x: hidden;
 }
 
@@ -31,46 +31,47 @@ header {
   font-size: 1.5em;
 }
 
-.neon {
-  color: #00ffff;
-  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+.neon-text {
+  color: #fff;
+  text-shadow:
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #0ff;
 }
 
-.right-corner {
-  position: relative;
+.lang-select {
+  margin-right: 15px;
 }
 
-.main-menu {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.main-menu ul {
-  list-style: none;
-  padding: 0;
-  display: inline-flex;
-  gap: 30px;
-}
-
-.main-menu li a {
-  color: #00ffff;
-  text-decoration: none;
+select {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 5px;
   font-weight: bold;
-  font-size: 1.2em;
-}
-
-.juice-info {
-  margin-top: 10px;
-  font-style: italic;
-  color: #ffcc00;
 }
 
 main {
   padding: 20px;
 }
 
+.centered-tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .tab-content {
   display: none;
+  max-width: 600px;
+  border: 2px solid #0ff;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .tab-content.active {
@@ -98,4 +99,26 @@ footer {
   text-decoration: none;
   padding: 8px 12px;
   border-radius: 5px;
+}
+
+.highlight {
+  color: #0ff;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.fancy-text {
+  font-size: 1.1em;
+  color: #ccc;
+}
+
+.map-link {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 8px 15px;
+  background: #0ff;
+  color: #000;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
 }
