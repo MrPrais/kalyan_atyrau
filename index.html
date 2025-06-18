@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Кальян Атырау</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <button onclick="toggleSection('flavors')">🍓 Табаки</button>
+    <button onclick="toggleLanguage()">🌐 Язык</button>
+    <button onclick="openAbout()">🧾 О нас</button>
+  </div>
+
+  <div class="main-content">
+    <section id="flavors" class="hidden">
+      <h2>Доступные вкусы</h2>
+      <ul>
+        <li>🍌 Банановый Мусс</li>
+        <li>🍿 Сладкий Попкорн</li>
+        <li>🌰 Лесной Орех</li>
+        <li>🍏 Яблочный Штрудель</li>
+        <li>🍊 Апельсиновый Пирог</li>
+        <li>🥥❄ Ледяной Кокос</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Модальное окно О нас -->
+  <div id="aboutModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeAbout()">&times;</span>
+      <h2>О нас</h2>
+      <p>
+        Мы — команда, которая знает толк в кальянах. Работаем быстро, аккуратно и с душой. 
+        Каждый заказ — как для себя. Убедитесь сами!
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
