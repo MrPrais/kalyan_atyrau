@@ -1,9 +1,9 @@
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   color: white;
   background: #000;
-  position: relative;
   overflow-x: hidden;
 }
 
@@ -24,31 +24,45 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .logo {
   margin: 0;
+  font-size: 1.5em;
 }
 
-.center-nav {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-grow: 1;
+.neon {
+  color: #00ffff;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
 }
 
-.center-nav a {
-  color: white;
+.right-corner {
+  position: relative;
+}
+
+.main-menu {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main-menu ul {
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+  gap: 30px;
+}
+
+.main-menu li a {
+  color: #00ffff;
   text-decoration: none;
   font-weight: bold;
-  background: transparent;
-  border: none;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
-.lang-select {
-  min-width: 100px;
+.juice-info {
+  margin-top: 10px;
+  font-style: italic;
+  color: #ffcc00;
 }
 
 main {
@@ -84,81 +98,4 @@ footer {
   text-decoration: none;
   padding: 8px 12px;
   border-radius: 5px;
-}
-
-.menu-note {
-  margin-top: 15px;
-  color: #ffcc00;
-  font-weight: bold;
-  font-size: 1.1em;
-}
-
-#menu h2 {
-  font-size: 2em;
-  color: #00ffff;
-  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
-}
-
-/* СТИЛЬ ДЛЯ МЕНЮ */
-#menu {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(255, 0, 255, 0.15);
-  margin-bottom: 30px;
-}
-
-#menu h2 {
-  color: #ff33cc;
-  font-size: 2em;
-  text-shadow: 0 0 5px #ff33cc, 0 0 10px #ff66ff;
-  margin-bottom: 15px;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
-  padding-bottom: 10px;
-}
-
-#menu ul {
-  list-style: none;
-  padding: 0;
-}
-
-#menu li {
-  font-size: 1.15em;
-  margin: 10px 0;
-  padding-left: 28px;
-  position: relative;
-  color: #f8f8f8;
-}
-
-#menu li::before {
-  content: "💨";
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-/* СТИЛЬ ДЛЯ О НАС */
-#about {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 200, 255, 0.15);
-}
-
-#about h2 {
-  color: #00ccff;
-  font-size: 2em;
-  text-shadow: 0 0 5px #00ccff, 0 0 10px #0099ff;
-  margin-bottom: 15px;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
-  padding-bottom: 10px;
-}
-
-#about p {
-  font-size: 1.1em;
-  line-height: 1.8;
-  color: #f0f0f0;
-  text-shadow: 0 0 3px rgba(255, 255, 255, 0.1);
 }

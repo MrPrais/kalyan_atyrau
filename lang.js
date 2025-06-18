@@ -1,3 +1,4 @@
+
 const translations = {
   kz: {
     menu_title: "Темекі дәмін таңдаңыз",
