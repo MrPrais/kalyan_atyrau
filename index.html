@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Кальян Атырау 24/7</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
 </head>
 <body>
   <div class="smoke-bg">
@@ -22,13 +22,13 @@
 
   <header>
     <h1 id="title">Кальян доставка по Атырау 24/7</h1>
-    <p class="price" id="price">10 000 ₸ / 24 часа | 2 табака на выбор + 6 углей | Бесплатная доставка</p>
-    <p class="promo" id="promo">🔥 Акция: 48 часов — 14 990 ₸ — 3 табака + 9 углей!</p>
+    <p class="price" id="price">10 000 ₸ / 24 часа | 2 табака + 6 углей | Бесплатно</p>
+    <p class="promo" id="promo">🔥 Акция: 48 ч — 14 990 ₸ — 3 табака + 9 углей!</p>
   </header>
 
   <main>
     <div class="menu">
-      <h3>Вкусы табака:</h3>
+      <h3>Меню вкусов:</h3>
       <ul>
         <li>🍌 Банановый Мусс</li>
         <li>🍿 Сладкий Попкорн</li>
@@ -38,31 +38,48 @@
         <li>🥥❄ Ледяной Кокос</li>
       </ul>
     </div>
+
+    <div class="delivery">
+      <h3>Выбор доставки:</h3>
+      <button>Центр</button>
+      <button>На район</button>
+      <button>Окраина</button>
+    </div>
+
+    <div class="future">
+      <h3>Скоро будут:</h3>
+      <p>🥤 Натуральные лимонады и освежающие соки!</p>
+    </div>
+
     <a class="order-btn" href="https://wa.me/770778146774" target="_blank">
-      📲 Заказать через WhatsApp
+      <img src="whatsapp.png" class="icon"> Заказать через WhatsApp
     </a>
   </main>
 
   <footer>
-    <p>Instagram: <a href="https://www.instagram.com/dblm_atyrau" target="_blank">📸 @dblm_atyrau</a></p>
+    <p>Мы в Instagram: 
+      <a href="https://www.instagram.com/dblm_atyrau" target="_blank">
+        <img src="instagram.png" class="icon"> @dblm_atyrau
+      </a>
+    </p>
   </footer>
 
   <script>
     function changeLang(lang) {
       if (lang === "ru") {
         document.getElementById("title").innerText = "Кальян доставка по Атырау 24/7";
-        document.getElementById("price").innerText = "10 000 ₸ / 24 часа | 2 табака на выбор + 6 углей | Бесплатная доставка";
-        document.getElementById("promo").innerText = "🔥 Акция: 48 часов — 14 990 ₸ — 3 табака + 9 углей!";
+        document.getElementById("price").innerText = "10 000 ₸ / 24 часа | 2 табака + 6 углей | Бесплатно";
+        document.getElementById("promo").innerText = "🔥 Акция: 48 ч — 14 990 ₸ — 3 табака + 9 углей!";
       }
       if (lang === "kk") {
         document.getElementById("title").innerText = "Атырау қаласына кальян жеткізу 24/7";
-        document.getElementById("price").innerText = "10 000 ₸ / 24 сағат | 2 темекі + 6 көмір | Тегін жеткізу";
-        document.getElementById("promo").innerText = "🔥 Акция: 48 сағатқа — 14 990 ₸ — 3 темекі мен 9 көмір!";
+        document.getElementById("price").innerText = "10 000 ₸ / 24 сағат | 2 темекі + 6 көмір | Тегін";
+        document.getElementById("promo").innerText = "🔥 48 сағат — 14 990 ₸ — 3 темекі + 9 көмір!";
       }
       if (lang === "en") {
         document.getElementById("title").innerText = "Hookah Delivery in Atyrau 24/7";
-        document.getElementById("price").innerText = "10,000 ₸ / 24 hours | 2 tobaccos + 6 coals | Free delivery";
-        document.getElementById("promo").innerText = "🔥 Promo: 48 hours — 14,990 ₸ — 3 tobaccos + 9 coals!";
+        document.getElementById("price").innerText = "10,000 ₸ / 24 hours | 2 tobaccos + 6 coals | Free";
+        document.getElementById("promo").innerText = "🔥 48 hrs — 14,990 ₸ — 3 tobaccos + 9 coals!";
       }
     }
   </script>
