@@ -76,7 +76,7 @@
   </header>
 
   <!-- Фото кальяна -->
-  <img src="сюда" alt="Кальян в аренду" style="width:100%; border-radius: 12px; margin-top: 20px;">
+  <img src="IMG_8410.jpeg" alt="Кальян в аренду" style="width:100%; border-radius: 12px; margin-top: 20px;">
   <section>
     <div class="block">
       <h2>🔥 Прокат на 24 часа — 10 000 ₸</h2>
