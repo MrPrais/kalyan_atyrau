@@ -2,97 +2,44 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Кальян Атырау 24/7</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Доставка кальянов в Атырау</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Кальян Атырау 24/7</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Главная</a></li>
-                <li><a href="#menu">Меню</a></li>
-                <li><a href="#delivery">Доставка</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="smoke-bg">
+    <img src="smoke.gif" alt="Smoke animation" class="smoke">
+  </div>
 
-    <section id="about">
-        <p>Сдаём кальяны в аренду по Атырау 24/7. Бесплатная доставка. Сейчас: от 10.000 ₸. Скоро — лимонады и соки!</p>
-    </section>
+  <header>
+    <h1>Кальяны с доставкой по Атырау 24/7</h1>
+    <p>10.000₸ — 24 часа | 2 табака + 6 углей</p>
+    <p>Акция: 14.990₸ — 48 часов | 3 табака + 9 углей</p>
+    <p>Доставка бесплатно</p>
+  </header>
 
-    <section id="menu">
-        <h2>Меню</h2>
-        <div class="tabs">
-            <button class="tablinks" onclick="openTab(event, 'packages')" id="defaultOpen">Пакеты</button>
-            <button class="tablinks" onclick="openTab(event, 'tobacco')">Табаки</button>
-        </div>
+  <section class="menu">
+    <h2>Меню табаков</h2>
+    <ul>
+      <li>🍌 Банановый Мусс</li>
+      <li>🍿 Сладкий Попкорн</li>
+      <li>🌰 Лесной Орех</li>
+      <li>🍏 Яблочный Штрудель</li>
+      <li>🍊 Апельсиновый Пирог</li>
+      <li>🥥❄ Ледяной Кокос</li>
+    </ul>
+  </section>
 
-        <div id="packages" class="tabcontent">
-            <ul>
-                <li>🔥 24 часа — 10.000₸: 2 табака, 6 углей</li>
-                <li>⚡ 48 часов — 14.990₸: 3 табака, 9 углей</li>
-                <li>Дополнительно: уголь — 400₸, табак — 1500₸</li>
-            </ul>
-        </div>
+  <section class="future">
+    <h3>Скоро в продаже:</h3>
+    <p>Освежающие лимонады и соки!</p>
+  </section>
 
-        <div id="tobacco" class="tabcontent">
-            <ul>
-                <li>🍌 Банановый Мусс</li>
-                <li>🍿 Сладкий Попкорн</li>
-                <li>🌰 Лесной Орех</li>
-                <li>🍏 Яблочный Штрудель</li>
-                <li>🍊 Апельсиновый Пирог</li>
-                <li>🥥❄ Ледяной Кокос</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="delivery">
-        <h2>Указать адрес на карте</h2>
-        <a href="https://2gis.kz/atyrau" target="_blank" class="map-btn">Открыть карту 2ГИС</a>
-        <textarea id="address" placeholder="Вставьте адрес отсюда 👆 и нажмите кнопку ниже"></textarea>
-        <a href="#" onclick="sendToWhatsApp()" class="delivery-btn">Отправить в WhatsApp</a>
-    </section>
-
-    <section id="contact">
-        <h2>Контакты</h2>
-        <a href="https://wa.me/770778146774" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="icon" alt="WhatsApp">
-        </a>
-        <a href="https://www.instagram.com/dblm_atyrau" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" class="icon" alt="Instagram">
-        </a>
-    </section>
-
-    <footer>
-        <p>© 2025 Кальян Атырау</p>
-    </footer>
-
-    <script>
-        function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-
-        document.getElementById("defaultOpen").click();
-
-        function sendToWhatsApp() {
-            var address = document.getElementById("address").value;
-            var url = "https://wa.me/770778146774?text=Здравствуйте! Хочу кальян по адресу: " + encodeURIComponent(address);
-            window.open(url, '_blank');
-        }
-    </script>
+  <footer>
+    <p>Связаться с нами:</p>
+    <a href="https://wa.me/77788146774" target="_blank">WhatsApp</a> |
+    <a href="https://www.instagram.com/sit04ka" target="_blank">Instagram</a>
+  </footer>
 </body>
 </html>
