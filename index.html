@@ -3,105 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Доставка кальянов Атырау</title>
+  <title>Kalyan Atyrau</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="lang.js" defer></script>
 </head>
 <body>
-  <div class="smoke-bg">
-    <img src="smoke.gif" alt="smoke" class="smoke" />
-  </div>
+  <div class="smoke-bg"></div>
 
   <header>
-    <nav class="navbar">
-      <div class="logo">Kalyan Atyrau</div>
-      <ul class="menu">
-        <li><a href="#home" data-translate="home">Главная</a></li>
-        <li class="dropdown">
-          <a href="#">Табаки ▼</a>
-          <ul class="dropdown-content">
-            <li>🍌 Банановый Мусс</li>
-            <li>🍿 Сладкий Попкорн</li>
-            <li>🌰 Лесной Орех</li>
-            <li>🍏 Яблочный Штрудель</li>
-            <li>🍊 Апельсиновый Пирог</li>
-            <li>🥥❄ Ледяной Кокос</li>
-          </ul>
+    <h1 class="logo">Kalyan Atyrau</h1>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="toggleTab('menu')">Меню</a></li>
+        <li><a href="#" onclick="toggleTab('delivery')">Доставка</a></li>
+        <li><a href="#" onclick="toggleTab('about')">О нас</a></li>
+        <li>
+          <select id="language-select" onchange="changeLanguage()">
+            <option value="ru">Русский</option>
+            <option value="kz">Қазақша</option>
+          </select>
         </li>
-        <li><a href="#delivery" data-translate="delivery">Доставка</a></li>
-        <li><a href="#about" data-translate="about">О нас</a></li>
       </ul>
-
-      <div class="lang-switch">
-        <button onclick="setLanguage('ru')">RU</button>
-        <button onclick="setLanguage('kz')">KZ</button>
-      </div>
-
-      <div class="socials">
-        <a href="https://www.instagram.com/sit04ka" target="_blank">
-          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="icon" />
-        </a>
-        <a href="https://wa.me/77788146774" target="_blank">
-          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="icon" />
-        </a>
-      </div>
     </nav>
   </header>
 
   <main>
-    <section id="home">
-      <h1 data-translate="welcome">Кальян в аренду по Атырау — 24/7</h1>
-      <p data-translate="offer">10.000₸ за 24 часа: 2 табака + 6 углей</p>
-      <p data-translate="promo">Акция: 48 часов — 14.990₸ (3 табака + 9 углей)</p>
+    <section id="menu" class="tab-content">
+      <h2 data-lang="menu_title">Выберите вкус табака</h2>
+      <ul>
+        <li>🍌 Банановый Мусс</li>
+        <li>🍿 Сладкий Попкорн</li>
+        <li>🌰 Лесной Орех</li>
+        <li>🍏 Яблочный Штрудель</li>
+        <li>🍊 Апельсиновый Пирог</li>
+        <li>🥥❄ Ледяной Кокос</li>
+      </ul>
     </section>
 
-    <section id="delivery">
-      <h2 data-translate="delivery_title">Выбор доставки</h2>
-      <p data-translate="delivery_note">Вы можете указать локацию через 2ГИС или отправить нам в WhatsApp</p>
-      <a href="https://2gis.kz/atyrau" target="_blank" class="btn">Открыть 2ГИС</a>
+    <section id="delivery" class="tab-content">
+      <h2>🚚 Доставка</h2>
+      <p>По Атырау 24/7. Бесплатно.</p>
+      <p>На 24 часа — 10.000₸ (2 табака и 6 углей)</p>
+      <p>На 48 часов — 14.990₸ (3 табака и 9 углей)</p>
+      <p>Дополнительно: уголь — 400₸, табак — 1500₸</p>
+      <a href="https://2gis.kz/atyrau" target="_blank">📍 Указать адрес через 2ГИС</a>
+      <p><strong>Скоро будут напитки и соки!</strong></p>
     </section>
 
-    <section id="about">
-      <h2 data-translate="about_title">О нас</h2>
-      <p data-translate="about_text">
-        Мы работаем круглосуточно, доставляем качественные кальяны по Атырау. В будущем будут соки, лимонады и многое другое!
-      </p>
+    <section id="about" class="tab-content">
+      <h2>О нас</h2>
+      <p>Мы — команда Kalyan Atyrau, работаем круглосуточно и доставляем лучший кальян по городу. У нас быстрый сервис, приятные цены и постоянные акции. Стремимся стать самыми лучшими в Атырау!</p>
     </section>
   </main>
 
-  <script>
-    const translations = {
-      kz: {
-        home: "Басты бет",
-        delivery: "Жеткізу",
-        about: "Біз туралы",
-        welcome: "Атырауда кальян жалға беру — 24/7",
-        offer: "24 сағатқа — 10.000₸: 2 табак + 6 көмір",
-        promo: "Акция: 48 сағат — 14.990₸ (3 табак + 9 көмір)",
-        delivery_title: "Жеткізу таңдау",
-        delivery_note: "2ГИС арқылы орынды көрсетіңіз немесе WhatsApp арқылы жіберіңіз",
-        about_title: "Біз туралы",
-        about_text: "Біз тәулік бойы жұмыс істейміз. Жақында шырындар мен лимонадтар пайда болады!"
-      },
-      ru: {
-        home: "Главная",
-        delivery: "Доставка",
-        about: "О нас",
-        welcome: "Кальян в аренду по Атырау — 24/7",
-        offer: "10.000₸ за 24 часа: 2 табака + 6 углей",
-        promo: "Акция: 48 часов — 14.990₸ (3 табака + 9 углей)",
-        delivery_title: "Выбор доставки",
-        delivery_note: "Вы можете указать локацию через 2ГИС или отправить нам в WhatsApp",
-        about_title: "О нас",
-        about_text: "Мы работаем круглосуточно, доставляем качественные кальяны по Атырау. В будущем будут соки, лимонады и многое другое!"
-      }
-    };
+  <footer>
+    <p>© 2025 Kalyan Atyrau — Сделано для кайфа</p>
+  </footer>
 
-    function setLanguage(lang) {
-      document.querySelectorAll("[data-translate]").forEach(el => {
-        const key = el.getAttribute("data-translate");
-        el.textContent = translations[lang][key];
-      });
-    }
-  </script>
+  <div class="social-buttons">
+    <a href="https://www.instagram.com/sit04ka?igsh=bWQxZjg2bjQ1cTZn" target="_blank">📷 Instagram</a>
+    <a href="https://wa.me/77788146774" target="_blank">💬 WhatsApp</a>
+  </div>
 </body>
 </html>
