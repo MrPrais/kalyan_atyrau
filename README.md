@@ -76,8 +76,7 @@
   </header>
 
   <!-- Фото кальяна -->
-  <img src="https://cdn.pixabay.com/photo/2015/11/01/14/44/hookah-821732_1280.jpg" alt="Кальян в аренду" style="width:100%; border-radius: 12px; margin: 20px 0;">
-
+  <img src="сюда" alt="Кальян в аренду" style="width:100%; border-radius: 12px; margin-top: 20px;">
   <section>
     <div class="block">
       <h2>🔥 Прокат на 24 часа — 10 000 ₸</h2>
