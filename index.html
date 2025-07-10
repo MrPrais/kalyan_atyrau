@@ -6,6 +6,14 @@
   <title>Kalyan Atyrau</title>
   <link rel="stylesheet" href="style.css" />
   <script src="lang.js" defer></script>
+  <script>
+    function toggleTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
 </head>
 <body>
   <div class="smoke-bg"></div>
@@ -23,6 +31,7 @@
         <li><a href="#" onclick="toggleTab('menu')" data-lang="menu_btn">Меню</a></li>
         <li><a href="#" onclick="toggleTab('delivery')" data-lang="delivery_btn">Доставка</a></li>
         <li><a href="#" onclick="toggleTab('about')" data-lang="about_btn">О нас</a></li>
+        <li><a href="#" onclick="toggleTab('energy')" data-lang="energy_btn">Энергетики</a></li>
       </ul>
     </nav>
   </header>
@@ -56,30 +65,26 @@
       <h2 class="neon-text" data-lang="about_title">О нас</h2>
       <p data-lang="about_desc">Мы — команда Kalyan Atyrau, работаем круглосуточно и доставляем лучший кальян по городу. У нас быстрый сервис, приятные цены и постоянные акции. Стремимся стать самыми лучшими в Атырау!</p>
     </section>
-  </main>
 
+    <!-- 🔋 Энергетики -->
+    <section id="energy" class="tab-content">
+      <h2 class="neon-text" data-lang="energy_title">🔥 НОВИНКА В МЕНЮ! 🔥</h2>
+      <div class="energy-box" style="border: 2px solid #ff007f; border-radius: 15px; padding: 30px; background: rgba(0, 0, 0, 0.7); max-width: 600px; margin: 0 auto; box-shadow: 0 0 20px #ff007f; text-align: center;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Red_Bull_250ml_can_2020.jpg/220px-Red_Bull_250ml_can_2020.jpg" alt="Red Bull" style="width: 120px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 0 20px #ff007f;">
+        <p style="color: #fff; font-size: 20px;">Теперь у нас есть <strong>Red Bull</strong> в трёх размерах:</p>
+        <ul style="list-style: none; padding: 0; font-size: 18px; color: #00ffcc; line-height: 2; margin-top: 20px;">
+          <li>🥤 <strong style="color:#fff;">Маленький</strong> — 1000₸</li>
+          <li>🥤 <strong style="color:#fff;">Средний</strong> — 1400₸</li>
+          <li>🥤 <strong style="color:#fff;">Большой</strong> — 1900₸</li>
+        </ul>
+        <a href="#delivery" style="display: inline-block; margin-top: 25px; padding: 12px 25px; background: #ff007f; color: #fff; text-decoration: none; border-radius: 8px; box-shadow: 0 0 10px #ff007f;">🚚 Заказать сейчас</a>
+      </div>
+    </section>
+  </main>
 
   <div class="social-buttons">
     <a href="https://www.instagram.com/dblm_atyrau?igsh=MTJrY3o4amllcHpn" target="_blank">📷 Instagram</a>
     <a href="https://wa.me/77788146774" target="_blank">💬 WhatsApp</a>
   </div>
 </body>
-<!-- СЕКЦИЯ: Энергетики с фоном дыма -->
-<section id="energy" style="padding: 60px 20px; background: url('https://i.ibb.co/hRmWWTZ/smoke-bg-dark.jpg') no-repeat center center / cover; text-align: center; font-family: 'Montserrat', sans-serif; position: relative; z-index: 1;">
-
-  <div style="background: rgba(0, 0, 0, 0.7); border: 2px solid #ff007f; border-radius: 15px; padding: 30px; max-width: 600px; margin: 0 auto; box-shadow: 0 0 20px #ff007f;">
-    <h2 style="color: #ff007f; font-size: 32px; margin-bottom: 20px;">🔥 НОВИНКА В МЕНЮ! 🔥</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Red_Bull_250ml_can_2020.jpg/220px-Red_Bull_250ml_can_2020.jpg" alt="Red Bull" style="width: 120px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 0 20px #ff007f;">
-    <p style="color: #fff; font-size: 20px; margin-bottom: 20px;">Теперь у нас есть <strong>Red Bull</strong> в трёх размерах:</p>
-    <ul style="list-style: none; padding: 0; font-size: 18px; color: #00ffcc; line-height: 2;">
-      <li>🥤 <strong style="color:#fff;">Маленький</strong> — 1000₸</li>
-      <li>🥤 <strong style="color:#fff;">Средний</strong> — 1400₸</li>
-      <li>🥤 <strong style="color:#fff;">Большой</strong> — 1900₸</li>
-    </ul>
-    <a href="#order" style="display: inline-block; margin-top: 25px; padding: 12px 25px; background: #ff007f; color: #fff; text-decoration: none; border-radius: 8px; box-shadow: 0 0 10px #ff007f; transition: 0.3s;">🚚 Заказать сейчас</a>
-  </div>
-
-</section>
-  <footer>
-    <p>© 2025 Kalyan Atyrau — Сделано для кайфа</p>
-  </footer>
+</html>
